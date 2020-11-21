@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src = "SoCS_McGill.png" width="400px" style="margin-left: 7%; margin-right: 5%; padding-bottom: 15px;">
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <div class="dropdown">
+                <button class="dropdownbtn">Prospective
+
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">General Info</a>
+                    <a href="#">Why CS?</a>
+                    <a href="#">CEGEP</a>
+                    <a href="#">Freshman</a>
+                    <a href="#">Choosing A Major</a>
+                    <a href="#">Transfer</a>
+                    <a href="#">Internship</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdownbtn">Academic
+
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Undergraduate</a>
+                    <a href="#">Graduate</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Teaching Assistant</a>
+                    <a href="#">Funding</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdownbtn">People
+
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Faculty</a>
+                    <a href="#">Staff</a>
+                    <a href="#">Community</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdownbtn">Donate
+
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdownbtn">About
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+
+    <div style="height: 1000px; background-color: rgb(255, 255, 255);">
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>All content related requests should be sent to webadmin@cs.mcgill.ca</p>
+            <p>© McGill University 2020 Credits</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+</body>
+</html>
