@@ -1,0 +1,168 @@
+*{
+    margin:0; 
+     
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.logo{
+   /* background-image: linear-gradient(to right, rgb(48, 48, 48), rgb(26, 26, 26));*/
+
+   background-image: url('final.jpeg');
+   background-position: center
+   
+  
+   
+
+}
+
+.footer{
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(48, 48, 48), rgb(26, 26, 26));
+    padding-top: 42px;
+    font-size: 16px;
+    height: 116px;
+    color: #f9f9f9;
+    text-align: right;
+
+    padding-left: 20px;
+    padding-right: 20px;
+   
+
+}
+
+.topnav{
+    width: 100%;
+    background-color: #ef3e33;
+    overflow: hidden;
+    display: block;
+}
+
+
+.topnav .icon {
+    text-decoration: none;
+    padding: 12px;
+    display: none;
+    color: #f2f2f2;
+}
+
+.dropdown{
+    
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbtn{
+    border: none;
+    font-size: 16px;
+    color: #f9f9f9;
+    background-color: inherit;
+    padding: 12px 26px;
+}
+
+.search{
+    font-size: 16px;
+    padding: 12px 26px ;
+    border: none;
+    color: black;
+    float: right;
+    margin-right: 15px;
+    background-color: #f9f9f9;
+ 
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content a{
+    color:black;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdownbtn{
+  background-color: black;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo-img{
+    margin-left: 7%; 
+    margin-right: 5%; 
+    padding-bottom: 15px; 
+    padding-top: 15px;
+    width: 400px;
+}
+
+/*change size of logo for mobile screens*/
+@media screen and (max-width: 450px){
+    .logo-img{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .dropdown .dropdownbtn{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .topnav.responsive {
+        position: relative;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.topnav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive .search{
+        float:none;
+        display: block;
+        width: 100%;
+       
+    }
+    
+    .topnav.responsive .dropdown{float: none;}
+    .topnav.responsive .dropdown-content{position: relative;}
+    .topnav.responsive .dropdown .dropdownbtn{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+
+
